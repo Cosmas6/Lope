@@ -1,6 +1,4 @@
 import React from "react";
-
-
 //GlobalStyle
 import GlobalStyle from "./components/GlobalStyle";
 import styled from "styled-components";
