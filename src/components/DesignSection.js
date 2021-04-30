@@ -34,108 +34,109 @@ const Designs = () => {
         </div>
         <div className="belowtext"></div>
       </DesignPage>
-      <div class="container">
-        <div class="carousel slide" id="main-carousel" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li
-              data-target="#main-carousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#main-carousel" data-slide-to="1"></li>
-            <li data-target="#main-carousel" data-slide-to="2"></li>
-            <li data-target="#main-carousel" data-slide-to="3"></li>
-            <li data-target="#main-carousel" data-slide-to="4"></li>
-            <li data-target="#main-carousel" data-slide-to="5"></li>
-            <li data-target="#main-carousel" data-slide-to="6"></li>
-          </ol>
+      <Container>
+        <div class="container">
+          <div class="carousel slide" id="main-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#main-carousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#main-carousel" data-slide-to="1"></li>
+              <li data-target="#main-carousel" data-slide-to="2"></li>
+              <li data-target="#main-carousel" data-slide-to="3"></li>
+              <li data-target="#main-carousel" data-slide-to="4"></li>
+              <li data-target="#main-carousel" data-slide-to="5"></li>
+            </ol>
 
-          {/* <!-- /.carousel-indicators --> */}
+            {/* <!-- /.carousel-indicators --> */}
 
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block img-fluid" src={plot1} alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h1>Mountain</h1>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid container-fluid" src={plot1} alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Mountain</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid container-fluid" src={plot2} alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Mountain</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci esse vitae exercitationem fugit, numquam minus!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid container-fluid" src={plot3} alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Mountain</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci esse vitae exercitationem fugit, numquam minus!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid container-fluid" src={plot4} alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Mountain</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci esse vitae exercitationem fugit, numquam minus!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid container-fluid" src={plot5} alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Mountain</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci esse vitae exercitationem fugit, numquam minus!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img class="d-block img-fluid container-fluid" src={plot6} alt="" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Mountain</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci esse vitae exercitationem fugit, numquam minus!
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src={plot2} alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Mountain</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci esse vitae exercitationem fugit, numquam minus!
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src={plot3} alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Mountain</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci esse vitae exercitationem fugit, numquam minus!
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src={plot4} alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Mountain</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci esse vitae exercitationem fugit, numquam minus!
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src={plot5} alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Mountain</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci esse vitae exercitationem fugit, numquam minus!
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src={plot6} alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Mountain</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Adipisci esse vitae exercitationem fugit, numquam minus!
-                </p>
-              </div>
-            </div>
+            {/* <!-- /.carousel-inner --> */}
+
+            <a
+              href="#main-carousel"
+              class="carousel-control-prev"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon "></span>
+              <span class="sr-only" aria-hidden="true">
+                Prev
+              </span>
+            </a>
+            <a
+              href="#main-carousel"
+              class="carousel-control-next"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only" aria-hidden="true">
+                Next
+              </span>
+            </a>
           </div>
-          {/* <!-- /.carousel-inner --> */}
-
-          <a
-            href="#main-carousel"
-            class="carousel-control-prev"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-            <span class="sr-only" aria-hidden="true">
-              Prev
-            </span>
-          </a>
-          <a
-            href="#main-carousel"
-            class="carousel-control-next"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-            <span class="sr-only" aria-hidden="true">
-              Next
-            </span>
-          </a>
+          {/* <!-- /.carousel --> */}
         </div>
-        {/* <!-- /.carousel --> */}
-      </div>
-      {/* <!-- /.container --> */}
+        {/* <!-- /.container --> */}
+      </Container>
 
       <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
       <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
@@ -205,6 +206,21 @@ const DesignPage = styled.div`
   @media screen and (max-width: 420px) {
     .slideshow {
       padding: 0rem 1rem 0rem 1rem;
+    }
+  }
+`;
+
+const Container = styled.div`
+  .carousel-inner {
+  }
+  .carousel-item {
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      line-height: 5;
+      margin: auto;
+      width: 100%;
     }
   }
 `;
