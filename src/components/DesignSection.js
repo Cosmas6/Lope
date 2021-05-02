@@ -14,8 +14,8 @@ import plot5 from "../img/D68/5.jpg";
 import plot6 from "../img/D68/6.jpg";
 
 const divStyle = {
-  width:'100%', 
-  height: '500px !important',
+  width: "100%",
+  height: "500px",
 };
 
 const Designs = () => {
@@ -41,130 +41,83 @@ const Designs = () => {
       </DesignPage>
       <Container>
         <div className="container">
-        <div class="carousel slide" id="main-carousel" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li
-              data-target="#main-carousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#main-carousel" data-slide-to="1"></li>
-            <li data-target="#main-carousel" data-slide-to="2"></li>
-            <li data-target="#main-carousel" data-slide-to="3"></li>
-            <li data-target="#main-carousel" data-slide-to="4"></li>
-            <li data-target="#main-carousel" data-slide-to="5"></li>
-          </ol>
-
-          {/* <!-- /.carousel-indicators --> */}
-          <div className="container">
-            <div id="my-carousel-bg" class="carousel-inner" role="listbox" style={divStyle}>
-              <div class="carousel-item active">
-                <img
-                  class="d-block img-fluid container-fluid"
-                  src={plot1}
-                  alt=""
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h1>Mountain</h1>
+          <div class="carousel slide" id="main-carousel" data-ride="carousel">
+            <div className="container">
+              <div
+                id="my-carousel-bg"
+                class="carousel-inner"
+                role="listbox"
+                style={divStyle}
+              >
+                <div class="carousel-item active">
+                  <img
+                    class="d-block img-fluid container-fluid"
+                    src={plot1}
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block img-fluid container-fluid"
+                    src={plot2}
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block img-fluid container-fluid"
+                    src={plot3}
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block img-fluid container-fluid"
+                    src={plot4}
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block img-fluid container-fluid"
+                    src={plot5}
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item ">
+                  <img
+                    class="d-block img-fluid container-fluid"
+                    src={plot6}
+                    alt=""
+                  />
                 </div>
               </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid container-fluid"
-                  src={plot2}
-                  alt=""
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Mountain</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci esse vitae exercitationem fugit, numquam minus!
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid container-fluid"
-                  src={plot3}
-                  alt=""
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Mountain</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci esse vitae exercitationem fugit, numquam minus!
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid container-fluid"
-                  src={plot4}
-                  alt=""
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Mountain</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci esse vitae exercitationem fugit, numquam minus!
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid container-fluid"
-                  src={plot5}
-                  alt=""
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Mountain</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci esse vitae exercitationem fugit, numquam minus!
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item ">
-                <img
-                  class="d-block img-fluid container-fluid"
-                  src={plot6}
-                  alt=""
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h3>Mountain</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci esse vitae exercitationem fugit, numquam minus!
-                  </p>
-                </div>
-              </div>
+              {/* <!-- /.carousel-inner --> */}
             </div>
-            {/* <!-- /.carousel-inner --> */}
-          </div>
-          {/* <!-- /.container --> */}
+            {/* <!-- /.container --> */}
 
-          <a
-            href="#main-carousel"
-            class="carousel-control-prev"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon "></span>
-            <span class="sr-only" aria-hidden="true">
-              Prev
-            </span>
-          </a>
-          <a
-            href="#main-carousel"
-            class="carousel-control-next"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-            <span class="sr-only" aria-hidden="true">
-              Next
-            </span>
-          </a>
-        </div>
-        {/* <!-- /.carousel --> */}
+            <a
+              href="#main-carousel"
+              class="carousel-control-prev"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon "></span>
+              <span class="sr-only" aria-hidden="true">
+                Prev
+              </span>
+            </a>
+            <a
+              href="#main-carousel"
+              class="carousel-control-next"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only" aria-hidden="true">
+                Next
+              </span>
+            </a>
+          </div>
+          {/* <!-- /.carousel --> */}
         </div>
       </Container>
 
@@ -253,15 +206,12 @@ const Container = styled.div`
       width: 100%;
     }
   }
-  
-  
 
   @media screen and (max-width: 2290px) {
     .carousel-item {
-      background-color: #b8b8b8;
+      background-color: #8a8a8a;
       img {
-        max-height: 550px;
-        max-width: 650px;
+        max-width: 70%;
       }
     }
   }
