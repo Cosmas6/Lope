@@ -13,6 +13,11 @@ import plot4 from "../img/D68/4.jpg";
 import plot5 from "../img/D68/5.jpg";
 import plot6 from "../img/D68/6.jpg";
 
+const divStyle = {
+  width:'100%', 
+  height: '500px !important',
+};
+
 const Designs = () => {
   return (
     <>
@@ -35,32 +40,40 @@ const Designs = () => {
         <div className="belowtext"></div>
       </DesignPage>
       <Container>
-        <div class="container">
-          <div class="carousel slide" id="main-carousel" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li
-                data-target="#main-carousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#main-carousel" data-slide-to="1"></li>
-              <li data-target="#main-carousel" data-slide-to="2"></li>
-              <li data-target="#main-carousel" data-slide-to="3"></li>
-              <li data-target="#main-carousel" data-slide-to="4"></li>
-              <li data-target="#main-carousel" data-slide-to="5"></li>
-            </ol>
+        <div className="container">
+        <div class="carousel slide" id="main-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#main-carousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#main-carousel" data-slide-to="1"></li>
+            <li data-target="#main-carousel" data-slide-to="2"></li>
+            <li data-target="#main-carousel" data-slide-to="3"></li>
+            <li data-target="#main-carousel" data-slide-to="4"></li>
+            <li data-target="#main-carousel" data-slide-to="5"></li>
+          </ol>
 
-            {/* <!-- /.carousel-indicators --> */}
-
-            <div class="carousel-inner">
+          {/* <!-- /.carousel-indicators --> */}
+          <div className="container">
+            <div id="my-carousel-bg" class="carousel-inner" role="listbox" style={divStyle}>
               <div class="carousel-item active">
-                <img class="d-block img-fluid container-fluid" src={plot1} alt="" />
+                <img
+                  class="d-block img-fluid container-fluid"
+                  src={plot1}
+                  alt=""
+                />
                 <div class="carousel-caption d-none d-md-block">
                   <h1>Mountain</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid container-fluid" src={plot2} alt="" />
+                <img
+                  class="d-block img-fluid container-fluid"
+                  src={plot2}
+                  alt=""
+                />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Mountain</h3>
                   <p>
@@ -70,7 +83,11 @@ const Designs = () => {
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid container-fluid" src={plot3} alt="" />
+                <img
+                  class="d-block img-fluid container-fluid"
+                  src={plot3}
+                  alt=""
+                />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Mountain</h3>
                   <p>
@@ -80,7 +97,11 @@ const Designs = () => {
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid container-fluid" src={plot4} alt="" />
+                <img
+                  class="d-block img-fluid container-fluid"
+                  src={plot4}
+                  alt=""
+                />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Mountain</h3>
                   <p>
@@ -90,7 +111,11 @@ const Designs = () => {
                 </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid container-fluid" src={plot5} alt="" />
+                <img
+                  class="d-block img-fluid container-fluid"
+                  src={plot5}
+                  alt=""
+                />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Mountain</h3>
                   <p>
@@ -100,7 +125,11 @@ const Designs = () => {
                 </div>
               </div>
               <div class="carousel-item ">
-                <img class="d-block img-fluid container-fluid" src={plot6} alt="" />
+                <img
+                  class="d-block img-fluid container-fluid"
+                  src={plot6}
+                  alt=""
+                />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Mountain</h3>
                   <p>
@@ -111,31 +140,32 @@ const Designs = () => {
               </div>
             </div>
             {/* <!-- /.carousel-inner --> */}
-
-            <a
-              href="#main-carousel"
-              class="carousel-control-prev"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon "></span>
-              <span class="sr-only" aria-hidden="true">
-                Prev
-              </span>
-            </a>
-            <a
-              href="#main-carousel"
-              class="carousel-control-next"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-              <span class="sr-only" aria-hidden="true">
-                Next
-              </span>
-            </a>
           </div>
-          {/* <!-- /.carousel --> */}
+          {/* <!-- /.container --> */}
+
+          <a
+            href="#main-carousel"
+            class="carousel-control-prev"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon "></span>
+            <span class="sr-only" aria-hidden="true">
+              Prev
+            </span>
+          </a>
+          <a
+            href="#main-carousel"
+            class="carousel-control-next"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only" aria-hidden="true">
+              Next
+            </span>
+          </a>
         </div>
-        {/* <!-- /.container --> */}
+        {/* <!-- /.carousel --> */}
+        </div>
       </Container>
 
       <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
@@ -221,6 +251,18 @@ const Container = styled.div`
       line-height: 5;
       margin: auto;
       width: 100%;
+    }
+  }
+  
+  
+
+  @media screen and (max-width: 2290px) {
+    .carousel-item {
+      background-color: #b8b8b8;
+      img {
+        max-height: 550px;
+        max-width: 650px;
+      }
     }
   }
 `;
